@@ -1,0 +1,50 @@
+﻿<Window x:Class="Vjezba3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vjezba3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="1,-10,-1,10">
+        <TextBox x:Name="Platitelj_Ime" HorizontalAlignment="Left" Height="62" Margin="48,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Text="naziv/ime i adresa"/>
+        <Label Content="PLATITELJ:" HorizontalAlignment="Left" Height="27" Margin="48,34,0,0" VerticalAlignment="Top" Width="100"/>
+        <CheckBox x:Name="HitnoBox" Content="Hitno" HorizontalAlignment="Left" Margin="163,40,0,0" VerticalAlignment="Top" Checked="HitnoBox_Checked"/>
+        <ComboBox x:Name="Valuta" HorizontalAlignment="Left" Height="31" Margin="284,39,0,0" VerticalAlignment="Top" Width="96">
+            <Label Content="EUR"/>
+            <Label Content="USD"/>
+            <Label Content="GBP"/>
+            <Label Content="CAD"/>
+            <Label Content="AUD"/>
+            <Label Content="HRK"/>
+            <Label Content="CHF"/>
+            <Label Content="CNY"/>
+            <Label Content="NOK"/>
+            <Label Content="MXN"/>
+            <Label Content="DKK"/>
+            <Label Content="RSD"/>
+        </ComboBox>
+        <Label Content="Valuta:" HorizontalAlignment="Left" Margin="234,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Iznos:" HorizontalAlignment="Left" Margin="411,34,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IznosTekst" HorizontalAlignment="Left" Height="31" Margin="456,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288"/>
+        <Label Content="IBAN ili broj računa platitelja:" HorizontalAlignment="Left" Margin="234,71,0,0" VerticalAlignment="Top" Width="229"/>
+        <TextBox x:Name="IBANPlatitelj" HorizontalAlignment="Left" Height="31" Margin="234,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
+        <Label Content="Model:" HorizontalAlignment="Left" Margin="53,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ModelPlatitelj" HorizontalAlignment="Left" Height="31" Margin="105,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Poziv na broj platitelja:" HorizontalAlignment="Left" Margin="195,137,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PNBPlatitelj" HorizontalAlignment="Left" Height="31" Margin="332,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251"/>
+        <TextBox x:Name="PrimateljIme" HorizontalAlignment="Left" Height="62" Margin="50,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Text="naziv/ime i adresa"/>
+        <Label Content="PRIMATELJ:" HorizontalAlignment="Left" Height="27" Margin="50,193,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="IBAN ili broj računa primatelja:" HorizontalAlignment="Left" Margin="231,199,0,0" VerticalAlignment="Top" Width="229"/>
+        <TextBox x:Name="PrimateljIBAN" HorizontalAlignment="Left" Height="31" Margin="231,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="449"/>
+        <Label Content="Model:" HorizontalAlignment="Left" Margin="235,272,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PrimateljModel" HorizontalAlignment="Left" Height="31" Margin="287,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"/>
+        <Label Content="Poziv na broj platitelja:" HorizontalAlignment="Left" Margin="377,272,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PrimateljPNB" HorizontalAlignment="Left" Height="31" Margin="514,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251"/>
+        <Button x:Name="Uplati" Content="Uplati" HorizontalAlignment="Left" Height="30" Margin="57,345,0,0" VerticalAlignment="Top" Width="86" Click="Uplati_Botun_Klik"/>
+        <Button x:Name="PronadiIBAN" Content="IBAN-u" HorizontalAlignment="Left" Height="30" Margin="560,365,0,0" VerticalAlignment="Top" Width="86" Click="Pronadi_IBAN"/>
+        <Label Content="Pronađi transakcije po: " HorizontalAlignment="Left" Height="28" Margin="553,337,0,0" VerticalAlignment="Top" Width="173"/>
+        <Button x:Name="PronadiIME" Content="Imenu/Nazivu" HorizontalAlignment="Left" Height="30" Margin="658,365,0,0" VerticalAlignment="Top" Width="86" Click="Pronadi_Ime"/>
+
+    </Grid>
+</Window>
